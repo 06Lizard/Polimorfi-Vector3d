@@ -23,5 +23,12 @@
         Console.WriteLine(dotProduct);
         object obj = new();
         obj.ToString();
+
+        Point3d p1 = new(3, 2, 8);
+        Point3d p2 = new(p1, v2);
+        Point3d p3 = Point3d.Add(p1, p2);
+        Point3d p4 = p1 + p2;
+        Point3d p5 = p1 + v3;
+        Console.WriteLine(p4[7]);
     }
 }
